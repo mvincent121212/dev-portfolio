@@ -36,6 +36,7 @@
   margin-top: 1rem;
   width: 90%;
   font-size: 2rem;
+  overflow-wrap: normal;
 }
 
 .screen-one {
@@ -182,59 +183,62 @@
   .screen-two,
   .screen-three,
   .screen-four {
-      justify-content: center;
+    justify-content: center;
   }
 
   .screen-one > p + a {
-      margin-top: 5rem;
+    margin-top: 5rem;
   }
-
 
   .screen-four > img {
-      max-width: 50%;
+    max-width: 50%;
   }
+}
 
-
+@media screen and (max-width: 360px) {
+  .screen-one > p,
+  .screen-two > p,
+  .screen-three > p,
+  .screen-four > p {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 640px) {
-    .screen-one > p,
-    .screen-two > p,
-    .screen-three > p {
-        font-size: 2.5rem;
-    }
+  .screen-one > p,
+  .screen-two > p,
+  .screen-three > p {
+    font-size: 2.5rem;
+  }
 
+  .screen-four > img {
+    max-width: 30%;
+  }
 
-    .screen-four > img {
-        max-width: 30%;
-    }
+  .screen-four > p {
+    font-size: 2rem;
+  }
 
-    .screen-four > p {
-        font-size: 2rem;
-    }
-
-    .icons {
-        font-size: 1.5rem;
-    }
-
+  .icons {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .screen-one > p {
-        font-size: 2.8rem;
-    }
-
+  .screen-one > p {
+    font-size: 2.8rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .screen-one > a,
-    .screen-two > a,
-    .screen-three > a,
-    .screen-four > a{
-        font-size: 2.5rem;
-    }
+  .screen-one > a,
+  .screen-two > a,
+  .screen-three > a,
+  .screen-four > a {
+    font-size: 2.5rem;
+  }
 
-    .icons {
-        font-size: 2.5rem;
-    }
+  .icons {
+    font-size: 2.5rem;
+  }
 }
