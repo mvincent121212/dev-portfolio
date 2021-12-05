@@ -240,6 +240,6 @@
     }
 
     .screen-one > p + a {
-        margin-top: -10rem;
+        margin-top: 0rem;
     }
 }
