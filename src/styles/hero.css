@@ -196,7 +196,7 @@ a > svg + svg {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .hero-container {
     flex-flow: row;
   }
