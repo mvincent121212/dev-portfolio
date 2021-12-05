@@ -38,7 +38,7 @@ function About() {
           <p>
             I first learned HTML, CSS, and Javascript a couple years ago and
             fell in love with it. I love the creativity that is involved with
-            front end development, and love manipulating the DOM as well as the
+            front end development, and I love manipulating the DOM while utilizing the
             depth of Javascript as a language.
           </p>
           <a href="#screen-four">

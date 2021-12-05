@@ -225,3 +225,16 @@
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+    .screen-one > a,
+    .screen-two > a,
+    .screen-three > a,
+    .screen-four > a{
+        font-size: 2.5rem;
+    }
+
+    .icons {
+        font-size: 2.5rem;
+    }
+}
