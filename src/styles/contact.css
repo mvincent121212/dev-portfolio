@@ -71,3 +71,14 @@ input[type='submit'] {
     opacity: 0.9;
     transition: opacity 0.2s ease-in;
   }
+
+  .form-submitted {
+      font-size: 2rem;
+      color: green;
+      animation: fadeInAnimation .5sec ease-in;
+  }
+
+
+  .invalid-text {
+      color: red;
+  }
