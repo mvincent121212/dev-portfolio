@@ -1,0 +1,245 @@
+.screen-one,
+.screen-two,
+.screen-three,
+.screen-four {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.screen-one a,
+.screen-two a,
+.screen-three a,
+.screen-four a {
+  color: white;
+  font-style: italic;
+  margin-top: 5rem;
+  padding: 1.5rem 2rem;
+  background-color: #6666cc;
+  outline: 2px solid black;
+  border-radius: 10px;
+}
+
+.screen-one a:hover,
+.screen-two a:hover,
+.screen-three a:hover,
+.screen-four a:hover {
+  opacity: 0.9;
+  transition: opacity 0.4s ease-in;
+}
+
+.screen-one > p,
+.screen-two > p,
+.screen-three > p,
+.screen-four > p {
+  margin-top: 1rem;
+  width: 90%;
+  font-size: 2rem;
+}
+
+.screen-one {
+  color: #3939ac;
+  background: linear-gradient(#3939ac 0 0) 0 50%/150% 95%,
+    linear-gradient(#3939ac 0 0) 0 0 /100% 100%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  animation: t 0.5s forwards, b 0.8s 0.6s forwards;
+}
+
+@keyframes t {
+  from {
+    background-size: 0 95%, 0 100%;
+  }
+}
+@keyframes b {
+  100% {
+    background-position: -200% 50%, 0 0;
+  }
+}
+
+.screen-one > p + a {
+  margin-top: 2rem;
+}
+
+.screen-two {
+  background: linear-gradient(45deg, #320113, #133201);
+  background-size: 400% 400%;
+  color: #fafafa;
+  animation: gradient 5s ease infinite;
+}
+
+.screen-two > p {
+  font-size: 1.8rem;
+}
+
+.screen-two > p + a {
+  margin-top: 4rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.screen-two a {
+  background-color: #320801;
+}
+
+.screen-two a:hover {
+  opacity: 0.6;
+}
+
+/* .screen-two > p + a {
+    margin-top: 1rem;
+} */
+
+.screen-three {
+  background-image: url("../images/screent.png");
+}
+
+.screen-three,
+.screen-four {
+  animation: scroll 70s linear infinite;
+  color: white;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.screen-three a {
+  background-color: #191970;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+.screen-three > p {
+  font-size: 1.8rem;
+}
+
+.screen-three > p + a {
+  margin-top: 5.5rem;
+}
+
+.screen-four > img {
+  max-width: 30%;
+  height: auto;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.screen-four {
+  color: black;
+}
+
+.screen-four > p {
+  font-size: 1.4rem;
+}
+
+.icons {
+  margin-top: 2.5rem;
+}
+
+.icons > a {
+  padding: 1rem 1.33rem;
+}
+
+@media screen and (min-height: 750px) {
+  .screen-one,
+  .screen-two,
+  .screen-three,
+  .screen-four {
+      justify-content: space-around;
+  }
+
+  .screen-one > p + a {
+      margin-top: -5rem;
+  }
+
+
+  .screen-four > img {
+      max-width: 50%;
+  }
+
+  .screen-four > p {
+      margin-top: -8rem;
+  }
+
+  .icons {
+      margin-top: -5rem;
+  }
+
+}
+
+@media screen and (min-width: 640px) {
+    .screen-one > p,
+    .screen-two > p,
+    .screen-three > p {
+        font-size: 2.5rem;
+    }
+
+    .screen-two > p + a {
+        margin-top: -5rem;
+    }
+
+    .screen-three > p + a {
+        margin-top: -5rem;
+    }
+
+    .screen-four > img {
+        max-width: 30%;
+    }
+
+    .screen-four > p {
+        font-size: 2rem;
+    }
+
+    .icons {
+        margin-top: -6rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .screen-one > p {
+        font-size: 2.8rem;
+    }
+
+    .screen-one > p + a {
+        margin-top: -10rem;
+    }
+}

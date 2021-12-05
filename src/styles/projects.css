@@ -1,0 +1,234 @@
+:root {
+  --shadow-color: 0deg 0% 62%;
+  --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.5px 0.9px 1.2px -1.2px hsl(var(--shadow-color) / 0.34),
+    1.2px 2.2px 2.8px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    1px 1.8px 2.3px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.5px 4.4px 5.7px -1.7px hsl(var(--shadow-color) / 0.36),
+    6.2px 10.8px 14px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    1.8px 3.2px 4.1px -0.4px hsl(var(--shadow-color) / 0.34),
+    3.4px 5.9px 7.7px -0.7px hsl(var(--shadow-color) / 0.34),
+    5.5px 9.7px 12.5px -1.1px hsl(var(--shadow-color) / 0.34),
+    8.8px 15.5px 20.1px -1.4px hsl(var(--shadow-color) / 0.34),
+    13.8px 24.2px 31.3px -1.8px hsl(var(--shadow-color) / 0.34),
+    21px 36.8px 47.7px -2.1px hsl(var(--shadow-color) / 0.34),
+    30.9px 54.2px 70.2px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+img {
+  height: auto;
+  max-width: 85%;
+  box-shadow: var(--shadow-elevation-medium);
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+}
+
+img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.projects-container {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.project-text {
+  margin-bottom: 3rem;
+  width: 100%;
+  padding: 0 0.75rem;
+}
+
+.image-container > a > div {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  font-style: italic;
+  padding: 15px 20px;
+  background-color: #002147;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in;
+}
+
+a + a {
+  margin-left: 2rem;
+}
+
+.column {
+  margin-bottom: 1.5rem;
+  /* padding: 0rem 0.5rem; */
+  font-size: 1.25rem;
+  border-radius: 2px;
+  hyphens: auto;
+}
+
+p > ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3rem;
+}
+
+.technologies-container {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technologies-container > ul > li::marker {
+  content: counter(list-item) "› ";
+  color: hotpink;
+}
+
+.technologies-container > ul > li {
+  margin-left: 1.6rem;
+}
+
+@media screen and (min-width: 640px) {
+  img {
+    max-width: 50%;
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(102,137,255,0.3);
+    opacity: 0.2;
+  }
+
+  .projects {
+    margin-top: 1.5rem;
+    max-width: 90%;
+    background-color: #f5f5f5;
+  }
+
+  .top-header {
+    margin-top: 1rem;
+  }
+
+  .project-text {
+    padding-left: 2rem;
+    /* padding-right: 1rem; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    max-width: 60%;
+  }
+
+  .projects {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  img {
+    max-width: 40%;
+  }
+  .projects {
+    max-width: 70%;
+  }
+}
+/* 
+@media all and (max-width:30em){
+     button {
+      display:block;
+      margin: 0.4em auto;
+     }
+    }  */
+
+/* 
+.projects {
+    height: 100%;
+    padding-top: 10vh;
+    background-color: #C0CAFF;
+}
+
+.project-container {
+    width: 75%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fcfcfc;
+    box-shadow: var(--)
+
+} */
+
+/* .project {
+    display: flex;
+    padding: 25px;
+    width: 100%;
+
+}
+
+.project-container > h1 {
+    display: inline-block;
+    margin: 20px;
+    height: 50px;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.project-container > h1::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    height: 75px;
+    background-color: #fba0e3;
+    border-radius: 2px;
+    opacity: 0.2;
+    z-index: 50;
+}
+
+.column {
+    flex-basis:: 50%;
+    font-size: 1.5rem;
+} */
+
+/* .technologies-list {
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+} */
