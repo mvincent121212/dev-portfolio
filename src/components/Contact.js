@@ -75,7 +75,7 @@ function Contact() {
               placeholder="michaelvincent@example.com"
               onChange = {(e) => {
                 setInputValues({...inputValues, email: e.target.value});
-                if (!regex.test(inputValues.email) && inputValues.email!= "") {
+                if (!regex.test(inputValues.email) && inputValues.email!== "") {
                   setInvalidEmail(() => true);
                 } else if (invalidEmail === true) {
                   setInvalidEmail(() => false);
