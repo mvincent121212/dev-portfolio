@@ -52,6 +52,7 @@ function Contact() {
         <div data-aos="fade-down">
           <h1>Contact Me</h1>
         </div>
+        <div className='form-submitted'></div>
         <form class="form" onSubmit={sendEmail}>
           <div class="name-container">
             <label>name</label>
@@ -99,7 +100,6 @@ function Contact() {
             <input type="submit" value="Send"></input>
           </div>
         </form>
-        <div className='form-submitted'></div>
       </div>
     </motion.div>
   );

@@ -46,7 +46,7 @@ img:hover {
 h1 {
   text-align: center;
   letter-spacing: 0.1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
 }
@@ -121,6 +121,14 @@ p > ul {
   margin-left: 1.6rem;
 }
 
+.projects-list {
+  display: none;
+}
+
+.projects-list-header {
+  display: none;
+}
+
 @media screen and (min-width: 640px) {
   img {
     max-width: 50%;
@@ -130,7 +138,7 @@ p > ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(102,137,255,0.3);
+    background-color: rgba(102, 137, 255, 0.3);
     opacity: 0.2;
   }
 
@@ -165,7 +173,51 @@ p > ul {
     max-width: 40%;
   }
   .projects {
-    max-width: 70%;
+    width: 70%;
+  }
+
+  .projects-list-header {
+    position: fixed;
+    display: inline;
+    left: 0%;
+    top: 5%;
+    padding-top: 2rem;
+    font-size: 1.75rem;
+    border-bottom: 1px solid black;
+    font-style: italic;
+    padding-left: 0.5rem;
+  }
+
+  .projects-list {
+    list-style: none;
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    max-width: 8%;
+    gap: 2rem;
+    left: 0;
+    top: 15%;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 0.5rem;
+  }
+
+  .projects-list > li {
+    background: linear-gradient(to right, #eee, #eee);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s 0s;
+  }
+
+  .projects-list > li:hover {
+    background-size: 100% 100%;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .projects-list {
+    font-size: 1.55rem;
   }
 }
 /* 

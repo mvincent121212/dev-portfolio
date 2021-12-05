@@ -23,8 +23,28 @@ function Projects() {
       exit={{ opacity: 0 }}
       className="projects-container"
     >
+      <h3 className="projects-list-header">Projects</h3>
+      <ul className="projects-list">
+        <li>
+          <a href="#twitter">React Twitter Clone</a>
+        </li>
+
+        <li>
+          <a href="#form">React Multistep Form</a>
+        </li>
+
+        <li>
+          <a href="#todo">JavaScript Rearrangeable Todo List</a>
+        </li>
+
+        <li>
+          <a href="#weather">React Weather App </a>
+        </li>
+      </ul>
       <div className="projects" id="projects">
-        <h1 className="top-header">React Twitter Clone</h1>
+        <h1 className="top-header" id="twitter">
+          React Twitter Clone
+        </h1>
         <section className="project">
           <div className="image-container">
             <a
@@ -82,7 +102,7 @@ function Projects() {
             </div>
           </div>
         </section>
-        <h1>React Multistep Form</h1>
+        <h1 id="form">React Multistep Form</h1>
         <section className="project">
           <div className="image-container">
             <a
@@ -127,7 +147,7 @@ function Projects() {
             </div>
           </div>
         </section>
-        <h1>Javascript Rearrangeable Todo List</h1>
+        <h1 id="todo">JavaScript Rearrangeable Todo List</h1>
         <section className="project">
           <div class="image-container">
             <a
@@ -174,7 +194,7 @@ function Projects() {
             </div>
           </div>
         </section>
-        <h1>React Weather App</h1>
+        <h1 id="weather">React Weather App</h1>
         <section className="project">
           <div class="image-container">
             <a
