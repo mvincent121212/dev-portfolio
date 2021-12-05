@@ -182,11 +182,11 @@
   .screen-two,
   .screen-three,
   .screen-four {
-      justify-content: space-around;
+      justify-content: center;
   }
 
   .screen-one > p + a {
-      margin-top: -5rem;
+      margin-top: 5rem;
   }
 
 
@@ -194,13 +194,6 @@
       max-width: 50%;
   }
 
-  .screen-four > p {
-      margin-top: -8rem;
-  }
-
-  .icons {
-      margin-top: -5rem;
-  }
 
 }
 
@@ -211,13 +204,6 @@
         font-size: 2.5rem;
     }
 
-    .screen-two > p + a {
-        margin-top: -5rem;
-    }
-
-    .screen-three > p + a {
-        margin-top: -5rem;
-    }
 
     .screen-four > img {
         max-width: 30%;
@@ -228,7 +214,6 @@
     }
 
     .icons {
-        margin-top: -6rem;
         font-size: 1.5rem;
     }
 
@@ -239,7 +224,4 @@
         font-size: 2.8rem;
     }
 
-    .screen-one > p + a {
-        margin-top: 0rem;
-    }
 }
