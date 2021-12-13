@@ -24,23 +24,22 @@ function Projects() {
       className="projects-container"
     >
       <h3 className="projects-list-header">Projects</h3>
-      <ul className="projects-list">
-        <li>
-          <a href="#twitter">React Twitter Clone</a>
-        </li>
-
-        <li>
-          <a href="#form">React Multistep Form</a>
-        </li>
-
-        <li>
-          <a href="#todo">JavaScript Rearrangeable Todo List</a>
-        </li>
-
-        <li>
-          <a href="#weather">React Weather App </a>
-        </li>
-      </ul>
+      <div class="projects-list-container">
+        <ul className="projects-list">
+          <li>
+            <a href="#twitter">React Twitter Clone</a>
+          </li>
+          <li>
+            <a href="#form">React Multistep Form</a>
+          </li>
+          <li>
+            <a href="#todo">JavaScript Rearrangeable Todo List</a>
+          </li>
+          <li>
+            <a href="#weather">React Weather App </a>
+          </li>
+        </ul>
+      </div>
       <div className="projects" id="projects">
         <h1 className="top-header" id="twitter">
           React Twitter Clone
