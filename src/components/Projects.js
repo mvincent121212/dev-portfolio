@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../styles/projects.css";
-import twitterClone from "../images/twitter-clone.png";
 import form from "../images/form-react.png";
 import todo from "../images/todo-app.png";
 import weather from "../images/weather-app.png";
@@ -38,9 +37,11 @@ function Projects() {
                 <img src={message} alt="messages page" className="big-image"/>
               </a>
             </div>
-            <p className="project-technologies">React/React Native, GraphQL, Django, AWS</p>
-            <h3 className="project-title">Instasource</h3>
-            <p className="project-description">A wholesale shopping platform in early development. Examples of features I have created are a messaging platform and a user's profile page.</p>
+            <div className="big-description">
+              <p className="project-technologies">React/React Native, GraphQL, Django, AWS</p>
+              <h3 className="project-title">Instasource</h3>
+              <p className="project-description">A wholesale shopping platform in early development. Examples of features I have created are a messaging platform and a user's profile page.</p>
+            </div>
 
           </div>
           <div className="small-projects">
