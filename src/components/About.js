@@ -16,8 +16,7 @@ function About() {
         <section className="screen-one">
           <p>
             Hi, my name is Michael Vincent! I live in Brooklyn, NY and work as a
-            math teacher. I am looking for opportunities in front
-            end development and have expertise in Javascript and React.
+            professional front end developer.
           </p>
           <a href="#screen-two">
             <div>Continue</div>
@@ -48,12 +47,13 @@ function About() {
         <section id="screen-four" className="screen-four">
           <img src={fourOne} alt="icon" />
           <p>
-            Now I want to retrace my steps and find a career in front end
-            development after developing a proficiency in it. I have learned JS,
-            React, Redux/Recoil, and Next.js, as well as Firebase for the
-            backend. Check out my Github or my projects listed on this
-            portfolio. I would love to hear from you to discuss web development
-            or talk opportunities!{" "}
+            Now I have found my passion in web development and design. I specialize
+            in React development and have designed applications on the web and
+            also in mobile apps via React Native. I additionally have expertise in
+            GraphQL and the Apollo client. I have worked closely with designers and
+            replicated Figma designs as well as coordinated with backend devs using
+            Django, so I am a strong and flexible member to have on a team. Feel free to contact
+            me with any opportunities!{" "}
           </p>
           <span className="icons">
             <a href="https://github.com/mvincent121212" target="_blank" rel="noreferrer">
