@@ -250,3 +250,17 @@
     font-size: 2.5rem;
   }
 }
+
+@media screen and (max-width: 280px) {
+  .screen-one {
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+  }
+
+  .screen-one, .screen-two {
+    min-width: 360px;
+  }
+  
+  
+}

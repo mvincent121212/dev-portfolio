@@ -101,9 +101,16 @@ a {
   width: 100%;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 415px) {
   .navbar {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .navbar > li {
+   margin-right: 0rem; 
   }
 }
 
