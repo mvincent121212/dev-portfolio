@@ -16,7 +16,7 @@ function About() {
         <section className="screen-one">
           <p>
             Hi, my name is Michael Vincent! I live in Brooklyn, NY and work as a
-            professional front end developer.
+            professional software engineer.
           </p>
           <a href="#screen-two">
             <div>Continue</div>

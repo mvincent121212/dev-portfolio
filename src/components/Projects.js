@@ -32,14 +32,14 @@ function Projects() {
         <div className="projects-container">
           <div className="big-project">
             <div className="big-img-container">
-              <a href="https://apps.apple.com/us/app/instasource/id1602560988" target="_blank" rel="noreferrer">
+              <a href="https://apps.apple.com/us/app/madeyn/id1602560988" target="_blank" rel="noreferrer">
                 <img src={profile} alt="profile page" className="big-image"/>
                 <img src={message} alt="messages page" className="big-image"/>
               </a>
             </div>
             <div className="big-description">
               <p className="project-technologies">React/React Native, GraphQL, Django, AWS</p>
-              <h3 className="project-title">Instasource</h3>
+              <h3 className="project-title">Madeyn</h3>
               <p className="project-description">A wholesale shopping platform in early development. Examples of features I have created are a messaging platform and a user's profile page.</p>
             </div>
 

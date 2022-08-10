@@ -15,9 +15,9 @@ function Hero() {
       <div className="hero-container" id="hero">
         <h1 className="hero-header">Michael Vincent</h1>
         <ul className="hero-list">
-          <li className="element-one">Front</li>
-          <li className="element-two">End</li>
-          <li className="element-three">Developer</li>
+          <li className="element-one">Software</li>
+          {/* <li className="element-two">End</li> */}
+          <li className="element-three">Engineer</li>
         </ul>
       </div>
       <div className="footer">
